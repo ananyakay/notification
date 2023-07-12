@@ -25,7 +25,7 @@ function toggleNotificationCharms() {
                     _html += '<span class="text-medium" style="font-size: 20px;">' + d.message + '</span>';
                     _html += '<br>';
                     _html += '<span class="text-light">' + formattedDate + '</span>';
-                    _html += '&nbsp;&nbsp;&nbsp;<button onclick="changeButtonText(this)">Mark read</button>'; // Updated button with three spaces before it
+                    _html += '&nbsp;&nbsp;&nbsp;<button onclick="changeButtonText(this, ' + d.id + ')">Mark read</button>'; // Updated button with three spaces before it
                     _html += '</div>';
                     _html += '</div>';
                     _html += '</li>';
@@ -43,6 +43,19 @@ function toggleNotificationCharms() {
     });
 }
 
-function changeButtonText(button) {
+function changeButtonText(button, notificationId) {
     button.innerText = 'Read';
+    //  code i added
+    $.ajax({ 
+        url: "/txhelpdesk/notification/" + notificationId + "/mark_as_read/",
+        type: 'put',
+        success: function() {
+            console.log('Notification marked as read.');
+            // Perform any additional actions or updates on the client-side
+        },
+        error: function(xhr, status, error) {
+            console.log('Error marking notification as read:', error);
+            // Handle the error if necessary
+        }
+    });
 }
