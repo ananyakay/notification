@@ -1,0 +1,22 @@
+<div data-role="charms" data-position="right" data-cls-charms="d-flex flex-column bg-white fg-black shadow-1 p-0 scroll-y w-75 w-25-sm" id="notification-charms">
+    <div class="d-flex flex-row border-top-bottom bd-gray p-1">
+        <div class="ml-2 mt-2 text-primary">Notifications</div>
+        <div class="ml-auto">
+            <button class="button bg-white" onclick="$('#notification-charms').data('charms').close()">
+                <span class="fa fa-times fg-black"></span>
+            </button>
+        </div>
+    </div>
+    <div class="d-flex flex-column flex-grow-self pos-relative h-100 p-2 px-4">
+        <div class="img-container drop-shadow">
+           
+            <ul class="list-group notif-list" style="list-style-type: none;">
+                <!-- List items will be dynamically generated here -->
+            </ul>
+        </div>
+        <div class="flex-grow-self scroll-y">
+            <div class="pos-absolute pos-0 px-1" id="notifications">   
+            </div>
+        </div>
+    </div>
+</div>

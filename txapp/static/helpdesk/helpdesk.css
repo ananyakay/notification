@@ -1,0 +1,148 @@
+.input, .select, .textarea, input[type="datetime-local"], input[type="email"], 
+input[type="file"], input[type="month"], input[type="number"], 
+input[type="password"], input[type="search"], input[type="tel"], input[type="text"], 
+input[type="time"], input[type="url"], input[type="week"], select, textarea{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    border: 1px #d9d9d9 solid;
+    color: #1d1d1d;
+    padding: 0 .75rem;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    /* line-height: 36px; */
+    background: #fff none;
+      background-clip: border-box;
+    background-clip: padding-box;
+    min-width: 0;
+  }
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.Critical{
+  color: red;
+}
+
+.High{
+ color: orange;
+}
+
+.Normal{
+  color: #5ebdec;
+}
+
+.Low{
+ color: green;
+}
+
+.Very{
+  color: lightgreen;
+}
+
+.error {
+  background-color: rgba(245, 245, 245, 0.09);
+  color: red !important;
+
+}
+
+.text-primary {
+  color: #4e73df !important;
+}
+
+a.text-primary:hover, a.text-primary:focus {
+  color: #224abe !important;
+}
+
+.text-secondary {
+  color: #858796 !important;
+}
+
+a.text-secondary:hover, a.text-secondary:focus {
+  color: #60616f !important;
+}
+
+.text-success {
+  color: #1cc88a !important;
+}
+
+a.text-success:hover, a.text-success:focus {
+  color: #13855c !important;
+}
+
+.text-info {
+  color: #36b9cc !important;
+}
+
+a.text-info:hover, a.text-info:focus {
+  color: #258391 !important;
+}
+
+.text-warning {
+  color: #f6c23e !important;
+}
+
+a.text-warning:hover, a.text-warning:focus {
+  color: #dda20a !important;
+}
+
+.text-danger {
+  color: #e74a3b !important;
+}
+
+a.text-danger:hover, a.text-danger:focus {
+  color: #be2617 !important;
+}
+
+#search-input::placeholder {
+  margin-top: 4px; /* margin top for item in placeholder */
+}
+
+.app-content {
+max-height: 2.5rem;
+overflow: hidden;
+}
+
+.command-button {
+height: 128px; /* Set a fixed height for the button */
+}
+
+.command-button .text-muted {
+width: 100%;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+.navview.compacted .navview-pane > .v-menu-container > .v-menu > li > a > .caption, .navview.js-compact .navview-pane > .v-menu-container > .v-menu > li > a > .caption
+
+/* .preloader-container {
+  position: fixed;
+  z-index: 1031;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /*background: transparent;*/
+  background-color: rgba(255, 255, 255, 0.5);
+  display: block;
+  overflow: hidden;
+  padding: 25%;
+}
+
+.preloader-center {
+  position: absolute;
+  padding: 15px;
+  top: 50%;
+  left:50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /*background: transparent;*/
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+  font-size: 60px;
+} */
